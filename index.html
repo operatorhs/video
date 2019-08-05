@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>视屏播放</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="font-icon/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="video-container">
+    <img src="images/loading.gif" alt="" class="mask">
+    <video src="http://d101.paixin.com/3592311/6261/v/450/depositphotos_62611669-stock-video-male-lion-yawn-walk-sit.mp4" class="video" id="video"></video>
+    <!-- <video src="assets/trailer.mp4" class="video" id="video"></video> -->
+    <div class="progress">
+      <span class="line-progress">
+          <span class="current-progress"></span>
+      </span>
+      <span class="is-play fa fa-play-circle"></span>
+      <div class="timer">
+          <span class="curren-timer">00:00:00</span>&nbsp;/&nbsp;
+          <span class="line-timer">00:00:00</span>
+      </div>
+    </div>
+  </div>
+  <div class="problime-box">
+    <div class="content">
+      <h3 class="title">提示：答对继续观看！！</h3>
+      <div class="problime">
+        <!-- TODO -->
+      </div>
+    </div>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

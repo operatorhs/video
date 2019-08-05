@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0；
+}
+.video-container {
+  margin: 40px auto 0;
+  width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+.video-container span{
+  display: block;
+}
+.video-container .mask{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 100;
+}
+.video-container .video {
+  width: 800px;
+  display: inline-block;
+}
+.video-container .progress{
+  width: calc(100% - 30px);
+  height: 40px;
+  background: rgba(255,255,255,.1);
+  border-radius: 6px;
+  position: absolute;
+  bottom: 8px;
+  left: 15px;
+}
+.video-container .progress .line-progress {
+  width: 540px;
+  height: 10px;
+  background: rgba(255,255,255,.3);
+  position: absolute;
+  left: 57px;
+  top: 16px;
+  border-radius: 4px;
+}
+.video-container .progress .line-progress .current-progress{
+  width: 0;
+  height: 100%;
+  background: rgba(255,255,255,.8);
+  border-radius: 4px;
+  /* transition: all .2s linear; */
+}
+.video-container .progress .is-play{
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 5px;;
+  left: 15px;
+}
+.video-container .progress .timer{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+}
+
+.problime-box{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  background: rgba(0, 0, 0, .6);
+  transition: all .5s ease;
+  display: none;
+}
+.problime-box .content{
+  width: 300px;
+  height: 200px;
+  margin: 100px auto 0;
+  color:rgba(0,0,0,.7);
+  background: #eee;
+  border-radius: 6px;
+  padding: 15px;
+}
+.problime-box .content .title{
+  font-weight: 400;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaa;
+}
+.problime-box .content .problime{
+  padding-top: 10px;
+  font-size: 16px;
+}
+.problime-box .content .problime .stem{
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.problime-box .content .problime ul{
+  list-style: none;
+  padding-left: 0;
+}
+.problime-box .content .problime ul li{
+  display: flex;
+  padding-top: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  background: #eee;
+  letter-spacing: 1px;
+}
+
